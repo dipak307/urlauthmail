@@ -10,7 +10,6 @@ let PORT=5000;
 
 
   app.use(express.json());
-  app.u
   app.use(cors({
        origin:"http://localhost:3001",
        methods:['POST','GET'],
