@@ -6,6 +6,7 @@ import {  useNavigate } from 'react-router-dom';
 const ForgotPassword = () => {
     const [email,setEmail]=useState('')
     const navigate=useNavigate();
+     axios.defaults.withCredentials=true;
        const submitHandler=(e)=>{
            e.preventDefault();
            Axios.post("https://urlauthmail-edse.vercel.app/auth/forgotpassword",{email})
