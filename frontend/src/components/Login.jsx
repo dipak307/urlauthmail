@@ -13,7 +13,7 @@ const Login = () => {
        const submitHandler=(e)=>{
            e.preventDefault();
            console.log("clicked..")
-           Axios.post("http://localhost:5000/auth/login",{email,password})
+           Axios.post("https://urlauthmail-edse.vercel.app/auth/login",{email,password})
             .then(response=>{
                  if(response.data.status){
                      navigate("/")
