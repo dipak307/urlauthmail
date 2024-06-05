@@ -9,7 +9,7 @@ const Singup = () => {
     const navigate=useNavigate();
        const submitHandler=(e)=>{
            e.preventDefault();
-           Axios.post("http://localhost:5000/auth/signup",{username,email,password})
+           Axios.post("https://urlauthmail-edse.vercel.app/auth/signup",{username,email,password})
             .then(response=>{
                  if(response.data.status){
                      navigate("/login")
