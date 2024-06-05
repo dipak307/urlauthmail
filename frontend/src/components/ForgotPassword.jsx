@@ -8,7 +8,7 @@ const ForgotPassword = () => {
     const navigate=useNavigate();
        const submitHandler=(e)=>{
            e.preventDefault();
-           Axios.post("http://localhost:5000/auth/forgotpassword",{email})
+           Axios.post("https://urlauthmail-edse.vercel.app/auth/forgotpassword",{email})
             .then(response=>{
                  if(response.data.status){
                      alert("check your email reset password link!")
