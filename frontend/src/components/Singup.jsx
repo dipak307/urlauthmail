@@ -7,6 +7,7 @@ const Singup = () => {
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
     const navigate=useNavigate();
+    axios.defaults.withCredentials=true;
        const submitHandler=(e)=>{
            e.preventDefault();
            Axios.post("https://urlauthmail-edse.vercel.app/auth/signup",{username,email,password})
